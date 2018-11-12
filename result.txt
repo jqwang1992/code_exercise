@@ -1,0 +1,76 @@
+[1;32mopenstack output will be in this color.[0m
+
+[1;32m==> openstack: Loading flavor: s3.small.1[0m
+[0;32m    openstack: Verified flavor. ID: s3.small.1[0m
+[1;32m==> openstack: Creating temporary keypair: packer_5be8d358-2cc6-66a4-f1b5-31e8587c7bfa ...[0m
+[1;32m==> openstack: Created temporary keypair: packer_5be8d358-2cc6-66a4-f1b5-31e8587c7bfa[0m
+[1;32m==> openstack: Launching server...[0m
+[1;32m==> openstack: Launching server...[0m
+[0;32m    openstack: Server ID: fcf2014e-2f70-46c5-80d5-870ae0d1e659[0m
+[1;32m==> openstack: Waiting for server to become ready...[0m
+[0;32m    openstack: Selected floating IP: '8f686f9a-3408-4fdd-be75-ea768065800c' (119.3.67.11)[0m
+[1;32m==> openstack: Associating floating IP '8f686f9a-3408-4fdd-be75-ea768065800c' (119.3.67.11) with instance port...[0m
+[0;32m    openstack: Added floating IP '8f686f9a-3408-4fdd-be75-ea768065800c' (119.3.67.11) to instance![0m
+[1;32m==> openstack: Using ssh communicator to connect: 119.3.67.11[0m
+[1;32m==> openstack: Waiting for SSH to become available...[0m
+[1;32m==> openstack: Connected to SSH![0m
+[1;32m==> openstack: Provisioning with shell script: /tmp/packer-shell133419321[0m
+[0;32m    openstack: + apt-get update -y[0m
+[0;32m    openstack: Hit:1 http://archive.ubuntu.com/ubuntu xenial InRelease[0m
+[0;32m    openstack: Get:2 http://security.ubuntu.com/ubuntu xenial-security InRelease [107 kB][0m
+[0;32m    openstack: Get:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB][0m
+[0;32m    openstack: Get:4 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB][0m
+[0;32m    openstack: Get:5 http://security.ubuntu.com/ubuntu xenial-security/main Sources [137 kB][0m
+[0;32m    openstack: Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main Sources [325 kB][0m
+[0;32m    openstack: Get:7 http://security.ubuntu.com/ubuntu xenial-security/universe Sources [83.1 kB][0m
+[0;32m    openstack: Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Sources [2,528 B][0m
+[0;32m    openstack: Get:9 http://security.ubuntu.com/ubuntu xenial-security/multiverse Sources [2,088 B][0m
+[0;32m    openstack: Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/universe Sources [229 kB][0m
+[0;32m    openstack: Get:11 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [575 kB][0m
+[0;32m    openstack: Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Sources [8,384 B][0m
+[0;32m    openstack: Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [873 kB][0m
+[0;32m    openstack: Get:14 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages [494 kB][0m
+[0;32m    openstack: Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [778 kB][0m
+[0;32m    openstack: Get:16 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [241 kB][0m
+[0;32m    openstack: Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [355 kB][0m
+[0;32m    openstack: Get:18 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [7,204 B][0m
+[0;32m    openstack: Get:19 http://security.ubuntu.com/ubuntu xenial-security/restricted i386 Packages [7,224 B][0m
+[0;32m    openstack: Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [7,556 B][0m
+[0;32m    openstack: Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages [7,524 B][0m
+[0;32m    openstack: Get:22 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en [2,152 B][0m
+[0;32m    openstack: Get:23 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en [2,272 B][0m
+[0;32m    openstack: Get:24 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [398 kB][0m
+[0;32m    openstack: Get:25 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [702 kB][0m
+[0;32m    openstack: Get:26 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages [345 kB][0m
+[0;32m    openstack: Get:27 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [644 kB][0m
+[0;32m    openstack: Get:28 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [154 kB][0m
+[0;32m    openstack: Get:29 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [286 kB][0m
+[0;32m    openstack: Get:30 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [3,460 B][0m
+[0;32m    openstack: Get:31 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages [3,632 B][0m
+[0;32m    openstack: Get:32 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [16.4 kB][0m
+[0;32m    openstack: Get:33 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en [1,744 B][0m
+[0;32m    openstack: Get:34 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages [15.5 kB][0m
+[0;32m    openstack: Get:35 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en [8,344 B][0m
+[0;32m    openstack: Get:36 http://archive.ubuntu.com/ubuntu xenial-backports/main Sources [4,856 B][0m
+[0;32m    openstack: Get:37 http://archive.ubuntu.com/ubuntu xenial-backports/universe Sources [6,740 B][0m
+[0;32m    openstack: Get:38 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7,288 B][0m
+[0;32m    openstack: Get:39 http://archive.ubuntu.com/ubuntu xenial-backports/main i386 Packages [7,292 B][0m
+[0;32m    openstack: Get:40 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en [4,456 B][0m
+[0;32m    openstack: Get:41 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [7,804 B][0m
+[0;32m    openstack: Get:42 http://archive.ubuntu.com/ubuntu xenial-backports/universe i386 Packages [7,488 B][0m
+[0;32m    openstack: Get:43 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en [4,184 B][0m
+[0;32m    openstack: Fetched 7,088 kB in 9s (778 kB/s)[0m
+[0;32m    openstack: Reading package lists...[0m
+[1;32m==> openstack: Stopping server: fcf2014e-2f70-46c5-80d5-870ae0d1e659 ...[0m
+[0;32m    openstack: Waiting for server to stop: fcf2014e-2f70-46c5-80d5-870ae0d1e659 ...[0m
+[1;32m==> openstack: Creating the image: CentOS-image-updating-powered-by-Packer[0m
+[0;32m    openstack: Image: 9eccbb17-9aed-4beb-bf44-1e8c80448ba3[0m
+[1;32m==> openstack: Waiting for image CentOS-image-updating-powered-by-Packer (image id: 9eccbb17-9aed-4beb-bf44-1e8c80448ba3) to become ready...[0m
+[1;32m==> openstack: Terminating the source server: fcf2014e-2f70-46c5-80d5-870ae0d1e659 ...[0m
+[1;32m==> openstack: Deleting temporary keypair: packer_5be8d358-2cc6-66a4-f1b5-31e8587c7bfa ...[0m
+[1;32m==> openstack: Running post-processor: manifest[0m
+[1;32mBuild 'openstack' finished.[0m
+
+==> Builds finished. The artifacts of successful builds are:
+--> openstack: An image was created: 9eccbb17-9aed-4beb-bf44-1e8c80448ba3
+--> openstack: 
